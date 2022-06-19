@@ -1,0 +1,143 @@
+body {
+    background-color: #e3f2fd;
+}
+
+section{
+    width: 1000px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#userInputArea{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+#unitsWrapper{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#unitsWrapper label{
+    padding: 10px;
+    color: #fff;
+    letter-spacing: .8px;
+}
+
+#unitsWrapper label:nth-child(2){
+    border-radius: 7px 0 0 7px;
+}
+
+#unitsWrapper input[type="radio"]:checked+label{
+    background-color: #1e88e5;
+}
+
+#unitsWrapper input[type="radio"]:not(:checked)+label{
+    background-color: #999;
+}
+
+#unitsWrapper input[type="radio"]:not(:checked)+label:hover{
+    cursor: pointer;
+    background-color: #aaa;
+}
+
+#unitsWrapper label:nth-child(4){
+    border-radius: 0 7px 7px 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+button{
+    font-size: 1.0em;
+    padding: 8px 16px;
+    border-radius: 7px;
+    border: 1px;
+    font-family: inherit;
+    color: white;
+    background-color: #1e88e5;
+    margin-left: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #2298ff;
+
+}
+
+input[type=text]{
+    padding: 10px;
+    width: 55%;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+}
+
+small{
+    margin-top: 5px;
+    display: none;
+    color: #DB577F;
+    font-weight: 900;
+}
+
+hr{
+    border: 0.5px solid #ccc;
+}
+
+#infoAndMaps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#map {
+    height: 200px;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+#infoList{
+    margin-right: 10px;
+}
+
+#hourlyForecastTbody tr{
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hourlyForecastDate{
+    background-color: #ecf6fd;
+    font-weight: bold;
+}
+
+.hourlyForecastItem td:nth-child(3){
+    text-align: center;
+}
+
+.hourlyForecastItem td:nth-child(3) span{
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: #eee;
+    padding: 6px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}

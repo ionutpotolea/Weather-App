@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognoza meteo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+</head>
+
+<body>
+    <section id="userInputArea">
+        <form>
+            <input type="text" name="userInput" id="userInput" placeholder="Introduceți orașul...">
+            <button id="showCurrentWeather">Afișează vremea</button>
+            <button id="showForecast">Afișează prognoza</button>
+            <div id="unitsWrapper">
+                <input type="radio" name="unitsOpt" id="celsius" checked>
+                <label for="celsius">°C</label>
+                <input type="radio" name="unitsOpt" id="fahrenheit">
+                <label for="fahrenheit">°F</label>
+            </div>
+        </form>
+        <small id="errorMsg">Error message</small>
+    </section>
+    <section id="currentWeatherWrapper">
+        <h3>Vremea acum<span></span></h3>
+        <hr>
+        <div id="infoAndMaps">
+            <div id="infoList">
+                <ul>
+                    <li><span></span></li>
+                    <li>Descriere: <span></span></li>
+                    <li>Umiditate: <span></span></li>
+                    <li>Presiune: <span></span></li>
+                    <li>Temperatura curentă: <span></span></li>
+                    <li>Minima zilei: <span></span></li>
+                    <li>Maxima zilei: <span></span></li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+
+    </section>
+    <section id="forecastWrapper">
+        <h3>Vremea în următoarele zile<span></span></h3>
+        <hr>
+        <div>
+            <table>
+                <tbody id="hourlyForecastTbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWybH6gNb7JeJ6E-mJrOVUpAR3GlAJ-Xs" async
+        defer></script>
+</body>
+
+</html>
